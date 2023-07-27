@@ -1,1 +1,37 @@
+The color_list that you see in the code is extracted from the image given in the code.
+It was extracted by the python library called colorgram.
 
+You can install the library by typing:
+
+pip install colorgram.py
+
+in your CMD
+
+Once the library is installed. 
+
+import colorgram
+
+
+colors = colorgram.extract('your_image_name.jpg', 30) ## any number of colors you want to extract
+
+for color in colors:
+  r = color.rgb.r
+  g = color.rgb.g
+  b = color.rgb.b
+  new_colors = (r,g,b)
+  rgb_colors.append(new_color)
+
+print(rgb_colors)
+
+
+Use this code above my replacing the 'your_image_name' by actual name of you image,
+and make sure it is in the same directory.
+
+The console will output all the rgb colors.
+Copy them and paste them into your code and assign a variable to that list, 
+as I assigned 'color_list'
+
+Note:
+Try to remove the colors that have values close to 256 in all three planes. Because the can be a shade of white and will efeect your drawing.
+
+Thank you. Enjoy :)

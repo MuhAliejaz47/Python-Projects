@@ -1,1 +1,7 @@
+In the Drawing_Maker, use the:
 
+'W' key for forward movement
+'S' key for backward movement
+'A' key for left turning
+'D' key for right turning
+'C' key for clearing the drawing and resetting the cursor.
